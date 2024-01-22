@@ -1,0 +1,58 @@
+@use 'variables' as v;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+} 
+        
+*, *:before, *:after { box-sizing: inherit; }
+        
+body{
+    font-size: 16px; /*1rem = 10px */
+    font-family: v.$font-family;
+    background-color: v.$bg-200;
+    &.fijar-body{
+        overflow: hidden;
+    }
+    &.body-scroll{
+        padding-top: 87.02px;
+    }
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 80%;
+    margin: 0 auto; //centra horizontal mente
+}
+
+p{
+    font-size: 1.6rem;
+    color: v.$text-100;
+    line-height: 1.4;
+}
+
+h1,h2,h3{
+    margin: 0 0 1rem 0;
+    color: v.$text-100;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+ font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+li{
+    color: v.$text-100;
+}

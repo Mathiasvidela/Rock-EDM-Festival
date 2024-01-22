@@ -1,0 +1,45 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.about-festival{
+    padding: 4rem 0;
+    @include m.tablet{
+        @include m.grid(2,5rem);
+    }
+    .img-festival{
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+    img{
+        width: 100%; /* Hace que la imagen ocupe el 100% del ancho del div */
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.contenido-festival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    @include m.tablet{
+        margin-top: 0;
+    }
+    h2{
+        font-size: 4rem;
+        margin-bottom: 2rem;        
+    }
+    .fecha{
+        color:v.$primary-100;
+        font-weight: 400;
+        margin-bottom: 1;
+    }
+    .info{
+        background-color: v.$bg-300;
+        display: inline-block;
+        padding: 2.5rem;
+        border-radius: 0 3rem 3rem 3rem;
+        font-weight: 200;
+        margin: 0;
+    }
+}
